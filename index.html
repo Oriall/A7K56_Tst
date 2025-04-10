@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a7k56thelastsymphony</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #0a0f1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #111;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #aaa;
+            transition: color 0.3s;
+        }
+
+        ul li a:hover {
+            color: #fff;
+        }
+
+        .auth-buttons button {
+            background-color: #333;
+            border: none;
+            color: #fff;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #555;
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #fbc531;
+            background-color: #854f00;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .get-started {
+            background-color: #6a0dad;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .get-started:hover {
+            background-color: #7b2cbf;
+            box-shadow: 0 0 10px #9d4edd;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: left;
+        }
+
+        .trusted-section {
+            background-color: #000;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .trusted-section h2 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .trusted-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .trusted-stats div {
+            text-align: center;
+        }
+
+        .trusted-stats h3 {
+            font-size: 2em;
+            color: #4c8bf5;
+        }
+
+        .trusted-stats p {
+            color: #bbb;
+        }
+
+        .view-guide {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 0 10px #9d4edd;
+        }
+
+        .avatar-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* .large-image{
+            margin: 20px auto;
+            max-width: 250px;
+        }
+        .large-image img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        } */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            /* Xếp ảnh theo chiều dọc */
+            align-items: center;
+            /* Căn giữa ảnh */
+            margin: 20px auto;
+            max-width: 100px;
+            /* Chiều rộng tối đa của container */
+            width: 50%;
+            /* Fit toàn bộ chiều rộng có thể */
+        }
+
+        .side-image {
+            width: 50%;
+            /* Ảnh chiếm hết chiều rộng container */
+            max-width: 100px;
+            /* Kích thước tối đa bằng container */
+            height: auto;
+            /* Chiều cao tự động theo tỷ lệ */
+            border-radius: 8px;
+            /* Bo góc nhẹ */
+            margin: 10px 0;
+            /* Khoảng cách dọc giữa các ảnh */
+            object-fit: cover;
+            /* Ảnh fit mà không méo */
+        }.avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    text-align: center;  /* Căn giữa nội dung văn bản */
+}
+
+.avatar-info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #f3e8e8;    
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">12A7</div>
+            <ul>
+                <li><a href="#">Sections</a></li>
+                <li><a href="#">Problems</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button>Search</button>
+                <button>Login</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Group 1 Report</h1>
+        <p>Welcome to 12A7 - where <span class="highlight">Legends</span> are made, not born.</p>
+        <button class="get-started">Get Started</button>
+        <!-- Thêm ảnh to ở đây -->
+        <div class="image-container">
+            <img src="./Anh tap the/tap the 4.jpg" alt="Large Image"
+                width="1060px" style="border-radius: 30px;">
+            <div style="height: 50px"></div>
+            <img src="./Anh tap the/tap the 1.jpg" alt="Large Image"
+                width="1060px" style="border-radius: 30px;">
+            <div style="height: 50px"></div>
+            <img src="./Anh tap the/tap the 2.jpg" alt="Large Image"
+                width="1060px" style="border-radius: 30px;">
+            <div style="height: 50px"></div>
+            <img src="./Anh tap the/tap the 3.jpg" alt="Large Image"
+                width="1060px" style="border-radius: 30px;">
+
+        </div>
+        <div class="trusted-section">
+            <h2>Trusted by thousands.</h2>
+            <p>This class is led by <span style="color:#4c8bf5">Top-tier Contender</span>, including 8.0+ IELTS
+                scorers and 1500+ SAT warriors.</p>
+            <div class="trusted-stats">
+                <div>
+                    <h3>41</h3>
+                    <p>Members</p>
+                </div>
+                <div>
+                    <h3>4+</h3>
+                    <p>Groups</p>
+                </div>
+                <div>
+                    <h3>Top 1</h3>
+                    <p>Rankers</p>
+                </div>
+            </div>
+            <button class="view-guide">View Guide</button>
+            <div class="avatar-grid" id="avatarGrid"></div>
+
+
+            <script>
+                const avatars =[
+                    { src: "./bui nhat.jpg", name: "Bùi Việt Nhật"}, 
+                    { src: "./dac tan.jpg", name: "Trần Đắc Tấn"},
+                    { src: "./dang khoa.jpg", name: "Tạ Nguyễn Đăng Khoa" },
+                    { src: "./đoan nhu.jpg", name: "Đoàn Bùi Quỳnh Như" },
+                    { src: "./hai dang 2.jpg", name: "Nguyễn Hải Đăng" },
+                    { src: "./minh lam.jpg", name: "Nguyễn Phạm Minh Lâm" },
+                    { src: "./ngoc anh.jpg", name: "Trần Ngọc Ánh" },
+                    { src: "./ngoc diep.jpg", name: "Nguyễn Ngọc Diệp"},
+                    { src: "./thao phuong.jpg", name: "Hoàng Lê Thảo Phương"},
+                    { src: "./thuc khanh.jpg", name: "Nguyễn Thục Khanh" },
+                    { src: "./tien minh.jpg", name: "Nguyễn Tiến Minh" },
+                    { src: "./anh thu.jpg", name: "Đỗ Thị Anh Thư" },
+                    { src: "./dang chi.jpg", name: "Đặng Trần Quỳnh Chi" },
+                    { src: "./dang nhu.jpg", name: "Đặng Quỳnh Như" },
+                    { src: "./dinh khanh.jpg", name: "Trần Đình Khánh" },
+                    { src: "./duc duy.jpg", name: "Đặng Đoàn Đức Duy" },
+                    { src: "./ha khoa.jpg", name: "Hà Văn Khoa" },
+                    { src: "./hien anh.jpg", name: "Đinh Thị Hiền Anh" },
+                    { src: "./hieu ngan.jpg", name: "Nguyễn Hiếu Ngân" },
+                    { src: "./thanh ngan.jpg", name: "Nguyễn Thanh Ngân" },
+                    { src: "./hoang anh.jpg", name: "Nguyễn Hoàng Anh" },
+                    { src: "./hong chi.jpg", name: "Lê Dương Hồng Chi" },
+                    { src: "./khanh huy.jpg", name: "Đặng Khánh Huy" },
+                    { src: "./mai linh.jpg", name: "Lường Nguyễn Mai Linh" },
+                    { src: "./mai phuong.jpg", name: "Phạm Mai Phương" },
+                    { src: "./minh chau.jpg", name: "Nguyễn Thị Minh Châu" },
+                    { src: "./minh nhat.jpg", name: "Thái Minh Nhật" },
+                    { src: "./ngoc khanh.jpg", name: "Trần Thị Ngọc Khánh" },
+                    { src: "./nguyen khanh.jpg", name: "Bùi Thị Nguyên Khánh" },
+                    { src: "./phuong thuy.jpg", name: "Phan Thị Phương Thùy" },
+                    { src: "./quoc thu.jpg", name: "Nguyễn Quốc Thư" },
+                    { src: "./quynh nga.jpg", name: "Trần Thị Quỳnh Nga" },
+                    { src: "./quynh tram.jpg", name: "Văn Lê Quỳnh Trâm" },
+                    { src: "./thao trang.jpg", name: "Lê Nguyễn Thảo Trang" },
+                    { src: "./thao vy.jpg", name: "Lê Thảo Vy" },
+                    { src: "./tran chi.jpg", name: "Trần Lê Quỳnh Chi" },
+                    { src: "./tri dang.jpg", name: "Vương Trí Đăng" },
+                    { src: "./trong hieu.jpg", name: "Nguyễn Trọng Hiếu" },
+                    { src: "./nhat linh.jpg", name: "Phan Nhật Linh" },
+                
+                    
+                ]
+                const container = document.getElementById("avatarGrid");
+                avatars.forEach(data => {
+                    container.innerHTML += `
+                        <div class="avatar-wrapper">
+                            <div class="avatar"><img src="${data.src}" alt="${data.name}"></div>
+                            <div class="avatar-info">${data.name}</div>
+                        </div>
+                    `;
+                });
+            </script>
+        </div>
+        </a>
+    </main>
+    <footer>
+        <p>Created by Group 1 A7K56
+            including Đăng Khoa, Thảo Phương, Minh Lâm, Hải Đăng, Ngọc Ánh, Bùi Nhật, Đắc Tấn, Tiến Minh, Thục Khanh
+        </p>
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>
